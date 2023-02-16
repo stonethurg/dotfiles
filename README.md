@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles. Use with LARBS
+My dotfiles. Fork of Luke Smith's dotfiles
