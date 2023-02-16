@@ -1,0 +1,8 @@
+#!/bin/sh
+
+crypto=`echo $1 | tr '[a-z]' '[A-Z]'`
+amt=$2
+price=`curl -s rate.sx/1$crypto | grep -Eo ".*\..."`
+
+testing=$( echo "$price * $amt" | bc)
+printf "Value of $amt$crypto: $testing\n"
